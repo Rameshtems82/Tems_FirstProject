@@ -447,7 +447,10 @@ p {
         text-align: center;
     }
     .about-image {
-        width: 300px;
-        height: 370px;
+        width: 315px;
+        height: 380px;
+    }
+    .about-content{
+        text-align: left;
     }
 }
