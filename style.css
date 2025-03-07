@@ -335,6 +335,468 @@ p {
     background: #e63e1a;
 }
 
+/* Services Section */
+.services-section {
+    padding: 80px 10%;
+    text-align: center;
+    background: #f8f9fc;
+    position: relative;
+}
+
+.services-tag {
+    background: #ff4a22;
+    color: white;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.services-container h2 {
+    font-size: 28px;
+    margin: 15px 0 40px;
+    font-weight: bold;
+    color: #0d0d0d;
+}
+
+/* Service Boxes in Grid Layout */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Individual Service Box */
+.service-box {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    text-align: center;
+    height: 250px; /* Ensuring square shape */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Service Box Icons */
+.service-box i {
+    font-size: 45px;
+    color: #ff4a22;
+    margin-bottom: 15px;
+}
+
+/* Service Box Title */
+.service-box h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0d0d0d;
+}
+
+/* Service Box Description */
+.service-box p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Free Quote Section */
+.free-quote {
+    background: linear-gradient(rgba(255, 74, 34, 0.9), rgba(255, 74, 34, 0.9)), url('s1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 10%;
+    text-align: left;
+}
+
+.quote-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.quote-text h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.quote-text p {
+    color: white;
+    font-size: 16px;
+}
+
+.quote-form {
+    display: flex;
+    width: 50%;
+}
+
+.quote-form input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.quote-form button {
+    background: #000;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Our Member Section */
+.our-member {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #f8f9fc;
+}
+
+.section-title span {
+    background: #ff5722;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-align: center;
+    
+}
+
+.section-title h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.member-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 90px;
+}
+.member-info {
+    
+    padding: 20px 0; /* Adds white space below the image */
+    text-align: center; /* Centers the text */
+}
+.member-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    transition: 0.3s;
+    width: 300px;
+}
+
+/* Image Container */
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Share Button and Social Icons Container */
+.share-container {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+/* Share Button */
+.share-btn {
+    background: #ff5722;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    z-index: 2;
+    
+}
+
+.share-btn:hover {
+    background: rgb(3, 0, 29);
+}
+
+/* Social Icons (Initially Hidden) */
+.social-icons {
+    position: absolute;
+    bottom: 40px; /* Hidden initially */
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+/* Social Icons Design */
+.social-icons a {
+    background: #ff5722;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background:  rgb(3, 0, 29);
+}
+
+/* Show Social Icons When Hovering Over Share Button */
+.share-container:hover .social-icons {
+    opacity: 1;
+    visibility: visible;
+    bottom: 60px; /* Slide Up */
+}
+/* Our Member Section */
+.our-member {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #f8f9fc;
+}
+
+.section-title span {
+    background: #ff5722;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.member-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 90px;
+    flex-wrap: wrap;
+}
+
+.member-info {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.member-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    transition: 0.3s;
+    width: 300px;
+}
+
+/* Image Container */
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Share Button and Social Icons Container */
+.share-container {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+/* Share Button */
+.share-btn {
+    background: #ff5722;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    z-index: 2;
+}
+
+.share-btn:hover {
+    background: rgb(3, 0, 29);
+}
+
+/* Social Icons (Initially Hidden) */
+.social-icons {
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+/* Social Icons Design */
+.social-icons a {
+    background: #ff5722;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: rgb(3, 0, 29);
+}
+
+
+
+/* Show Social Icons on Hover (Desktop) */
+@media (hover: hover) {
+    .share-container:hover .social-icons {
+        opacity: 1;
+        visibility: visible;
+        bottom: 60px; /* Slide Up */
+    }
+}
+
+/* Show Social Icons When Tapped on Mobile */
+.share-container.active .social-icons {
+    opacity: 1;
+    visibility: visible;
+    bottom: 60px;
+}
+
+/* Responsive Styles */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .our-member {
+        padding: 50px 5%;
+    }
+
+    .member-card {
+        width: 45%;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .our-member {
+        padding: 40px 5%;
+    }
+
+    .member-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member-card {
+        width: 90%;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .our-member {
+        padding: 30px 5%;
+    }
+
+    .member-card {
+        width: 100%;
+    }
+
+    .share-container {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .social-icons {
+        bottom: 45px;
+    }
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .quote-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .quote-text{
+        margin-bottom: 20px;
+    }
+
+    .quote-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .quote-form input {
+        border-radius: 5px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .quote-form button {
+        border-radius: 5px;
+        width: 100%;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 
 /* Mobile Responsive Styles */
 @media only screen and (max-width: 767px) {
